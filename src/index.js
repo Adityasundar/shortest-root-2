@@ -4,6 +4,31 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCpteThp2Y_mENTnh7Ky6F1fpM5LCCza5o",
+  authDomain: "shortest-root-c4e48.firebaseapp.com",
+  databaseURL: "https://shortest-root-c4e48-default-rtdb.firebaseio.com",
+  projectId: "shortest-root-c4e48",
+  storageBucket: "shortest-root-c4e48.appspot.com",
+  messagingSenderId: "879631186937",
+  appId: "1:879631186937:web:d0382e0b0616e701909b28",
+  measurementId: "G-WH5V1B1Z6V"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
